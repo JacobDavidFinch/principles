@@ -1,7 +1,7 @@
 # Style Guide
 Preferred Code Style Guide picked up from blogs, books, videos, and preferences.
 ## Naming Convention
----
+
 camelCase naming convention
 - fooBar.js
 - let fooBar
@@ -24,7 +24,7 @@ use eslint unicorn for file naming enforcement
 	}
 ]
 ```
-
+---
 
 ### Variable Naming
 #### S-I-D
@@ -87,8 +87,8 @@ const isDisabled = itemCount <= 3
 return <Button disabled={isDisabled} />
 ```
 
+---
 ### Function Naming
-
 #### A/HC/LC Pattern
 
 There is a useful pattern to follow when naming functions:
@@ -190,5 +190,52 @@ const friend = ['Bob', 'Tony', 'Tanya']
 const friend = 'Bob'
 const friends = ['Bob', 'Tony', 'Tanya']
 ```
+---
+## Commits
 
-#### Big Shoutout to [Unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/filename-case.md), [kettanaito](https://github.com/kettanaito/naming-cheatsheet) for the inspiration and for making this easy for me. Their descriptions, layouts, etc. made much of this as simple as pulling over the concepts.
+Write clean, single-purpose commits. Don't get sidetracked! Commit one particular thing at a time. 
+- Easier to see changes and code reviews will be more efficient
+- Commit rollback is far easier
+- Straightforward to track changes in the ticketing system
+
+Best way to achieve clean, single-purpose commits? Commit early and commit often
+
+Generally speaking, you shouldn't commit generated files. Only commit files that take manual effort to create.
+
+Use a rigged commit message format and be a better programmer for it
+
+- Prefix a type: chore, docs, feat, fix, refactor, style, or test
+- Summary in present tense
+
+``` 
+chore: add Oyster build script
+docs: explain hat wobble
+feat: add beta sequence
+fix: remove broken confirmation message
+refactor: share logic between 4d3d3d3 and flarhgunnstow
+style: convert tabs to spaces
+test: ensure Tayne retains clothing
+```
+---
+## Folder Structure
+
+- Don't get loose with where you keep documents. All projects should start in documents/repos
+- If projects are coupled together have a workspace for them
+- Follow the concept of co-location. Place code as close to where it's relevant as possible. 
+  - If you have an abstraction used all over, make a utils folder and place it in there
+  - If your fn, component, stylesheet, etc. is only used in one place, keep it with that one place. When the place get's overrun, make a file nearby to keep it. If the code starts getting used other places determine if it's time to abstract it out. 
+    > "Things that change together should be located as close as reasonable."
+---
+## High Level Code Opinions
+
+Avoid Hasty Abstractions
+> Prefer duplication over the wrong abstraction
+
+## Comments and  Documentation 
+- Explain why you're doing something unexpected in the comments so people coming after can understand the decisions that were made which resulted in the unexpected or odd code.
+
+## Testing
+
+## Extra Piece: Learning, Notes, and Flashcards
+
+#### Big Shoutout to [Unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/filename-case.md), [kettanaito](https://github.com/kettanaito/naming-cheatsheet), [Kent C. Dodds](https://kentcdodds.com/blog/colocation), [DeepSource](https://deepsource.io/blog/git-best-practices/) for the inspiration and for making this easy for me. Their descriptions, layouts, etc. made much of this as simple as pulling over the concepts.
