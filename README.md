@@ -236,6 +236,57 @@ Avoid Hasty Abstractions
 
 ## Testing
 
+## Logs
+
+Know when to use each log level
+`FATAL` - denotes very severe error events that will presumably lead the application to abort. Usually, these can end up in catastrophic failures.
+`ERROR` - denotes error events that might still allow the application to continue running, with reduced capabilities in the affected paths.
+`WARN` - denotes less-harmful events than errors. Usually, they do not lead to any degradation of capabilities or complete failure of the application. However, they are still red flags and `must` be investigated.
+`INFO` - denotes the important event banners and informational messages in the application behaviour.
+`DEBUG` - denotes specific and detailed information, mainly used for debugging purposes. These logs help us step through the code.
+`TRACE` - denotes most low-level information like stack traces of code to provide the most information on a certain event/context. These logs help us inspect the variable values and full error stacks.
+
 ## Extra Piece: Learning, Notes, and Flashcards
 
-#### Big Shoutout to [Unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/filename-case.md), [kettanaito](https://github.com/kettanaito/naming-cheatsheet), [Kent C. Dodds](https://kentcdodds.com/blog/colocation), [DeepSource](https://deepsource.io/blog/git-best-practices/) for the inspiration and for making this easy for me. Their descriptions, layouts, etc. made much of this as simple as pulling over the concepts.
+#### Learning
+
+Use the Feynman Technique
+1. Pretend to teach a concept you want to learn about to a student in the sixth grade.
+2. Identify gaps in your explanation. Go back to the source material to better understand it.
+3. Organize and simplify.
+4. Transmit (optional).
+#### Flashcards
+Retrieval practice is a great method for learning. Flashcards can assist for retrieval and spaced repetition
+
+Mistakes
+- You grab off-the-shelf flashcard decks, rather than make or edit your own.
+- You design the cards badly. This leads to either memorizing useless stuff or failing to learn what you actually care about.
+  - Each question should have one and only one correct answer. (Something violated by my Chinese deck as mentioned.)
+  - Questions should either have as little unnecessary context as possible, or redundancy. A vocabulary word alone, or used within a few sentences (each on different cards) are better designs than a single sentence. Why? Because you learn to predict the answer based on the surrounding context even if that won’t be there when you need to use it in real life.
+  - Questions should be simple. Complex problem solving isn’t well-suited to flashcards. Better to break apart complex problems into multiple steps, or simply forego flashcards altogether in favor of solving real problems.
+  - Questions should be something you actually need. Just because you can memorize something doesn’t mean you should.
+- Memorization substitutes for understanding.
+- Flashcards substitute for doing real practice.
+
+#### Note Taking
+Taking notes isn’t just a way of writing things down. It’s a way of orienting your attention so that you’ll build better memories—even if you never open the notebook again.
+
+Two purposes notes server are
+1. They record what you learned, for easy access later.
+2. They orient your attention, allowing you to remember more.
+
+What we’re trying to achieve when taking notes is to begin the process of organizing the information we’re receiving into a mental structure we can use later. Organized well, and the correct memories will automatically pop up when you need them.
+
+Ask yourself what kind of structure for knowledge do you need to organize? Next, Anticipate how you'll need to use your mind.
+- Think of the endpoint of learning. What inputs will you receive and how will you retrieve the needed outputs for them?
+  - Looking at it in a graphically, flow-chart way can help. Second-Brains are all about this [foam](https://github.com/foambubble/foam)
+  - The brain is complicated and so what you’re actually doing when learning and performing is going to be more sophisticated than a flow-chart. But, as a simplification for what you’re trying to do, they often work pretty well.
+- Whenever I tackle a new subject, one of my first thoughts is what kind of structure am I trying to build. What would be the input situations that should cause me to remember this knowledge? How do I need to manipulate it, discriminate between similar-seeming situations, calculate or reason with it?
+  - Rote Knowledge - Flashcards
+  - Complicated and trying to figure it out - Practice problems
+  - Looking for understaind - teach it to someone else/or self
+  - To solve practical problems - THink about applications and examples
+- If the situations where you want to use the knowledge are diverse, I would try to expose myself to as many different examples as possible. If the purpose is going to be fairly narrow, aimed at a specific task, I might want to practice repeatedly to think of it whenever I see that situation.
+
+
+#### Big Shoutout to [Unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/filename-case.md), [kettanaito](https://github.com/kettanaito/naming-cheatsheet), [Kent C. Dodds](https://kentcdodds.com/blog/colocation), [DeepSource](https://deepsource.io/blog/git-best-practices/), [Scott Young](https://www.scotthyoung.com/blog/2021/01/11/how-to-take-notes/) for the inspiration and for making this easy for me. Their descriptions, layouts, etc. made much of this as simple as pulling over the concepts.
