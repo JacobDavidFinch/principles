@@ -250,6 +250,20 @@ Which ones:
 
 `500` - Internal Server Error indicates that the request is valid, but the server could not fulfill it due to some unexpected condition.
 
+#### Branch Naming
+
+- Use hyphens as seperators ('_')
+- For space between groupings use slash ('-')
+- Go lowercase
+
+1. Start branch name with request number
+2. Next use group keywords bug/wip/feat/hotfix/experimental
+3. Finish with short descriptor of the task
+
+Examples:
+21830_bug__form-event-bubbling
+512311_feat_add-fb-oauth-login
+
 ---
 ## Git & Commits
 
@@ -327,57 +341,6 @@ Blah, here's a good [link](https://hired.com/blog/candidates/running-effective-m
 
 ## ACCESSIBLE FOR ALL 
 [here](https://web.dev/accessible/)
-## Extra Piece: Learning, Notes, and Flashcards
-
-#### Learning
-
-Use the Feynman Technique
-1. Pretend to teach a concept you want to learn about to a student in the sixth grade.
-2. Identify gaps in your explanation. Go back to the source material to better understand it.
-3. Organize and simplify.
-4. Transmit (optional).
-#### Flashcards
-Retrieval practice is a great method for learning. Flashcards can assist for retrieval and spaced repetition
-
-Mistakes
-- You grab off-the-shelf flashcard decks, rather than make or edit your own.
-- You design the cards badly. This leads to either memorizing useless stuff or failing to learn what you actually care about.
-  - Each question should have one and only one correct answer. (Something violated by my Chinese deck as mentioned.)
-  - Questions should either have as little unnecessary context as possible, or redundancy. A vocabulary word alone, or used within a few sentences (each on different cards) are better designs than a single sentence. Why? Because you learn to predict the answer based on the surrounding context even if that won’t be there when you need to use it in real life.
-  - Questions should be simple. Complex problem solving isn’t well-suited to flashcards. Better to break apart complex problems into multiple steps, or simply forego flashcards altogether in favor of solving real problems.
-  - Questions should be something you actually need. Just because you can memorize something doesn’t mean you should.
-- Memorization substitutes for understanding.
-- Flashcards substitute for doing real practice.
-
-#### Note Taking For Learning
-Taking notes isn’t just a way of writing things down. It’s a way of orienting your attention so that you’ll build better memories—even if you never open the notebook again.
-
-Two purposes notes server are
-1. They record what you learned, for easy access later.
-2. They orient your attention, allowing you to remember more.
-
-What we’re trying to achieve when taking notes is to begin the process of organizing the information we’re receiving into a mental structure we can use later. Organized well, and the correct memories will automatically pop up when you need them.
-
-Ask yourself what kind of structure for knowledge do you need to organize? Next, Anticipate how you'll need to use your mind.
-- Think of the endpoint of learning. What inputs will you receive and how will you retrieve the needed outputs for them?
-  - Looking at it in a graphically, flow-chart way can help. Second-Brains are all about this [foam](https://github.com/foambubble/foam)
-  - The brain is complicated and so what you’re actually doing when learning and performing is going to be more sophisticated than a flow-chart. But, as a simplification for what you’re trying to do, they often work pretty well.
-- Whenever I tackle a new subject, one of my first thoughts is what kind of structure am I trying to build. What would be the input situations that should cause me to remember this knowledge? How do I need to manipulate it, discriminate between similar-seeming situations, calculate or reason with it?
-  - Rote Knowledge - Flashcards
-  - Complicated and trying to figure it out - Practice problems
-  - Looking for understaind - teach it to someone else/or self
-  - To solve practical problems - THink about applications and examples
-- If the situations where you want to use the knowledge are diverse, I would try to expose myself to as many different examples as possible. If the purpose is going to be fairly narrow, aimed at a specific task, I might want to practice repeatedly to think of it whenever I see that situation.
-
-#### Note Taking For Meetings
-
-Mostly, keep it simple. The main information to write down is:
-
-- Key points on the agenda: Record a brief summary of each item covered on the agenda and the outcomes you discussed. Try to limit each point to no more than three sentences, and be sure to ask the room for confirmation before writing down any plans or decisions.
-- Action items: As action items are proposed in the meeting, make sure to write down the assignment, who it’s assigned to, and its due date.
-- Ideas: If you have ideas, questions, or follow-ups you want to make after the meeting wraps, include a section for jotting these types of notes down during the meeting so you don’t forget.
-
-Having a template with: Date of meeting, attendees, meeting agenda, questions and answers, action items, ideas/general notes. [Good Source](https://monday.com/blog/productivity/take-better-meeting-notes/)
 
 ## High Level Code Opinions
 
@@ -447,6 +410,58 @@ And it's similar that if something is easy to replace, it will probably get repl
 Every line of code written comes at a price: maintenance. To avoid paying for a lot of code, we build reusable software. The problem with code re-use is that it gets in the way of changing your mind later on.
 
 [Use cognitive complexity to measure understandability](https://www.sonarsource.com/docs/CognitiveComplexity.pdf)
+
+## Extra Piece: Learning, Notes, and Flashcards
+
+#### Learning
+
+Use the Feynman Technique
+1. Pretend to teach a concept you want to learn about to a student in the sixth grade.
+2. Identify gaps in your explanation. Go back to the source material to better understand it.
+3. Organize and simplify.
+4. Transmit (optional).
+#### Flashcards
+Retrieval practice is a great method for learning. Flashcards can assist for retrieval and spaced repetition
+
+Mistakes
+- You grab off-the-shelf flashcard decks, rather than make or edit your own.
+- You design the cards badly. This leads to either memorizing useless stuff or failing to learn what you actually care about.
+  - Each question should have one and only one correct answer. (Something violated by my Chinese deck as mentioned.)
+  - Questions should either have as little unnecessary context as possible, or redundancy. A vocabulary word alone, or used within a few sentences (each on different cards) are better designs than a single sentence. Why? Because you learn to predict the answer based on the surrounding context even if that won’t be there when you need to use it in real life.
+  - Questions should be simple. Complex problem solving isn’t well-suited to flashcards. Better to break apart complex problems into multiple steps, or simply forego flashcards altogether in favor of solving real problems.
+  - Questions should be something you actually need. Just because you can memorize something doesn’t mean you should.
+- Memorization substitutes for understanding.
+- Flashcards substitute for doing real practice.
+
+#### Note Taking For Learning
+Taking notes isn’t just a way of writing things down. It’s a way of orienting your attention so that you’ll build better memories—even if you never open the notebook again.
+
+Two purposes notes server are
+1. They record what you learned, for easy access later.
+2. They orient your attention, allowing you to remember more.
+
+What we’re trying to achieve when taking notes is to begin the process of organizing the information we’re receiving into a mental structure we can use later. Organized well, and the correct memories will automatically pop up when you need them.
+
+Ask yourself what kind of structure for knowledge do you need to organize? Next, Anticipate how you'll need to use your mind.
+- Think of the endpoint of learning. What inputs will you receive and how will you retrieve the needed outputs for them?
+  - Looking at it in a graphically, flow-chart way can help. Second-Brains are all about this [foam](https://github.com/foambubble/foam)
+  - The brain is complicated and so what you’re actually doing when learning and performing is going to be more sophisticated than a flow-chart. But, as a simplification for what you’re trying to do, they often work pretty well.
+- Whenever I tackle a new subject, one of my first thoughts is what kind of structure am I trying to build. What would be the input situations that should cause me to remember this knowledge? How do I need to manipulate it, discriminate between similar-seeming situations, calculate or reason with it?
+  - Rote Knowledge - Flashcards
+  - Complicated and trying to figure it out - Practice problems
+  - Looking for understaind - teach it to someone else/or self
+  - To solve practical problems - THink about applications and examples
+- If the situations where you want to use the knowledge are diverse, I would try to expose myself to as many different examples as possible. If the purpose is going to be fairly narrow, aimed at a specific task, I might want to practice repeatedly to think of it whenever I see that situation.
+
+#### Note Taking For Meetings
+
+Mostly, keep it simple. The main information to write down is:
+
+- Key points on the agenda: Record a brief summary of each item covered on the agenda and the outcomes you discussed. Try to limit each point to no more than three sentences, and be sure to ask the room for confirmation before writing down any plans or decisions.
+- Action items: As action items are proposed in the meeting, make sure to write down the assignment, who it’s assigned to, and its due date.
+- Ideas: If you have ideas, questions, or follow-ups you want to make after the meeting wraps, include a section for jotting these types of notes down during the meeting so you don’t forget.
+
+Having a template with: Date of meeting, attendees, meeting agenda, questions and answers, action items, ideas/general notes. [Good Source](https://monday.com/blog/productivity/take-better-meeting-notes/)
 
 ---
 
